@@ -18,15 +18,25 @@ the indexOf string method will be used on two separate halves (halved using subs
 -----------------------------------
 Methods
 
-
-
-
+-Create the calculateDistance method which will calculate the distance between the two points,
+rounded to the nearest hundredth.
+-Create the calculateSlope method which will calculate the slope and y-intercept of the linear
+equation containing the two (x, y) points, rounded to the nearest hundredth.
+-Create the makeEquation method which will return a printable String that represents the linear equation
+of the line in slope-intercept (y = mx + b) form, where m is the slope as a non-reduced fraction and
+b is the y-intercept in decimal  form; e.g. "y = 3x + 1.5". Final printed equation could be, e.g. "y = 1/2x + 1.5".
+-Create the toString method which returns a printable string containing all of LinearEquation’s information,
+including the two points, the slope, the y-intercept, the equation of the line through the two points in y = mx + b format,
+and the distance between the two points.
+-Create the calculateCorrespondingPoint method which calculates the coordinate point corresponding to an x value using doubles,
+and returns it as a String in the format (x, y), e.g. "(2.0, 1.5)" or "(4.775, 16.85)". Round all printed decimal values to the
+nearest hundredth (including distance, slope, y-intercept, and x and y values in returned coordinates).
 
 -----------------------------------
 Runner
 
--Output will welcome the user and prompt them to input a coordinate point like (3,-7). Integers only.
--The user's input will be used as an argument to construct the linearEquation object via the LinearEquation
+-Output will welcome the user and prompt them to input a pair of coordinate points like (3,-7). Integers only.
+-The user's input will be used as arguments to construct the linearEquation object via the LinearEquation
 constructor.
 -After the linearEquation object is constructed and information about it is printed in the output, prompt
 the user to enter an x value.
