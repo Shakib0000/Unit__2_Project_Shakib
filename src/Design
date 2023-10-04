@@ -1,46 +1,45 @@
+LinearEquation class
 
------------------------------------
-Instance Variables
+Instance Variables:
 
-private int x1;
-private int y1;
-private int x2;
-private int y2;
+    private int x1 - This variable represents the x-coordinate of the first point.
+    private int y1 - This variable represents the y-coordinate of the first point.
+    private int x2 - This variable represents the x-coordinate of the second point.
+    private int y2 - This variable represents the y-coordinate of the second point.
 
------------------------------------
 Constructor
+    -public LinearEquation(String point1, point2);
+    This constructor takes in the two coordinate points as two arguments.
+    The constructor will utilize the substring and length methods to assign the correct values from the arguments to their
+    respective instance variable that represents coordinate numbers x1, y1, x2, or y2. To check for negatives,
+    the indexOf string method will be used on two separate halves (halved using substring) of the coordinate pairs.
 
--Create constructor LinearEquation which takes in the two coordinate points as two arguments.
-The constructor will utilize the substring and length methods to assign the correct values from the arguments to their
-respective instance variable that represents coordinate numbers x1, y1, x2, or y2. To check for negatives,
-the indexOf string method will be used on two separate halves (halved using substring) of the coordinate pairs.
-
------------------------------------
 Methods
+    -public double calculateDistance()
+    This method will calculate the distance between the two points, rounded to the nearest hundredth.
+    -public double calculateSlope()
+    This method will calculate the slope of the linear equation containing the two (x, y) points, rounded to the nearest hundredth.
+    -public double calculateYIntercept()
+    This method will calculate the y-intercept of the linear equation containing the two (x, y) points, rounded to the nearest hundredth.
+    -public String makeEquation()
+    This method will return a printable String that represents the linear equation of the line in slope-intercept (y = mx + b) form, where m is the slope as a non-reduced fraction and
+    b is the y-intercept in decimal  form; e.g. "y = 3x + 1.5". Final printed equation could be, e.g. "y = 1/2x + 1.5".
+    -public String toString()
+    This method will return a printable string containing all of LinearEquation’s information, including the two points,
+    the slope, the y-intercept, the equation of the line through the two points in y = mx + b format, and the distance between the two points.
+    -public String calculateCorrespondingPoint()
+    This method will calculate the coordinate point corresponding to an x value using doubles,
+    and return it as a String in the format (x, y), e.g. "(2.0, 1.5)" or "(4.775, 16.85)". Round all printed decimal values to the
+    nearest hundredth (including distance, slope, y-intercept, and x and y values in returned coordinates).
 
--Create the calculateDistance method which will calculate the distance between the two points,
-rounded to the nearest hundredth.
--Create the calculateSlope method which will calculate the slope and y-intercept of the linear
-equation containing the two (x, y) points, rounded to the nearest hundredth.
--Create the makeEquation method which will return a printable String that represents the linear equation
-of the line in slope-intercept (y = mx + b) form, where m is the slope as a non-reduced fraction and
-b is the y-intercept in decimal  form; e.g. "y = 3x + 1.5". Final printed equation could be, e.g. "y = 1/2x + 1.5".
--Create the toString method which returns a printable string containing all of LinearEquation’s information,
-including the two points, the slope, the y-intercept, the equation of the line through the two points in y = mx + b format,
-and the distance between the two points.
--Create the calculateCorrespondingPoint method which calculates the coordinate point corresponding to an x value using doubles,
-and returns it as a String in the format (x, y), e.g. "(2.0, 1.5)" or "(4.775, 16.85)". Round all printed decimal values to the
-nearest hundredth (including distance, slope, y-intercept, and x and y values in returned coordinates).
+EquationRunner.java
 
------------------------------------
-Runner
-
--Output will welcome the user and prompt them to input a pair of coordinate points like (3,-7). Integers only.
--The user's input will be used as arguments to construct the linearEquation object via the LinearEquation
+Step 1: Output will welcome the user and prompt them to input a pair of coordinate points like (3,-7). Integers only.
+Step 2: The user's input will be used as arguments to construct the linearEquation object via the LinearEquation
 constructor.
--After the linearEquation object is constructed and information about it is printed in the output, prompt
+Step 3: After the linearEquation object is constructed and information about it is printed in the output, prompt
 the user to enter an x value.
--Print the corresponding coordinate point on the line using the x value inputted by the user. This is the only
+Step 4: Print the corresponding coordinate point on the line using the x value inputted by the user. This is the only
 input by the user that can be a double, and the corresponding coordinate point printed will be printed as a
 double as well.
 
