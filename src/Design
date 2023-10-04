@@ -11,6 +11,27 @@ private int y2;
 Constructor
 
 -Create constructor LinearEquation which takes in the two coordinate points as two arguments.
-The constructor will utilize the substring method to assign the correct values from the arguments to their
+The constructor will utilize the substring and length methods to assign the correct values from the arguments to their
 respective instance variable that represents coordinate numbers x1, y1, x2, or y2. To check for negatives,
 the indexOf string method will be used on two separate halves (halved using substring) of the coordinate pairs.
+
+-----------------------------------
+Methods
+
+
+
+
+
+-----------------------------------
+Runner
+
+-Output will welcome the user and prompt them to input a coordinate point like (3,-7). Integers only.
+-The user's input will be used as an argument to construct the linearEquation object via the LinearEquation
+constructor.
+-After the linearEquation object is constructed and information about it is printed in the output, prompt
+the user to enter an x value.
+-Print the corresponding coordinate point on the line using the x value inputted by the user. This is the only
+input by the user that can be a double, and the corresponding coordinate point printed will be printed as a
+double as well.
+
+
