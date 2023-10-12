@@ -14,14 +14,14 @@ Constructor
 
 Methods
     -public double calculateDistance()
-    This method will calculate and return the distance between the two points, rounded to the nearest hundredth.
+    This method will calculate and return the distance between the two points.
     -public double calculateSlope()
-    This method will calculate and return the slope of the linear equation containing the two (x, y) points, rounded to the nearest hundredth.
+    This method will calculate and return the slope of the linear equation containing the two (x, y) points.
     -public double calculateYIntercept()
-    This method will calculate and return the y-intercept of the linear equation containing the two (x, y) points, rounded to the nearest hundredth.
+    This method will calculate and return the y-intercept of the linear equation containing the two (x, y) points.
     -public String makeEquation()
     This method will return a printable String that represents the linear equation of the line in slope-intercept (y = mx + b) form, where m is the slope as a non-reduced fraction and
-    b is the y-intercept in decimal  form; e.g. "y = 3x + 1.5". Final printed equation could be, e.g. "y = 1/2x + 1.5".
+    b is the y-intercept in decimal form; e.g. "y = 3x + 1.5". Final printed equation could be, e.g. "y = 1/2x + 1.5".
     -public String toString()
     This method will return a printable string containing all of LinearEquation’s information, including the two points,
     the slope, the y-intercept, the equation of the line through the two points in y = mx + b format, and the distance between the two points.
@@ -33,12 +33,12 @@ Methods
 EquationRunner.java
 
 Step 1: Output will welcome the user and prompt them to input a pair of coordinate points like (3,-7). Integers only.
-Step 2: The user's input will be used as arguments to construct the linearEquation object via the LinearEquation
+Step 2: The user's inputs will be used as arguments to construct the linearEquation object via the LinearEquation class
 constructor.
 Step 3: After the linearEquation object is constructed and information about it is printed in the output, prompt
-the user to enter an x value.
-Step 4: Print the corresponding coordinate point on the line using the x value inputted by the user. This is the only
-input by the user that can be a double, and the corresponding coordinate point printed will be printed as a
-double as well.
+the user to enter a third x-value.
+Step 4: Print the corresponding coordinate point on the line using the third x-value inputted by the user. This is the only
+input by the user that can be a double, and the corresponding coordinate point printed will have its x and y values printed as
+doubles as well.
 
 
