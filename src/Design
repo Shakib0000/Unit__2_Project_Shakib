@@ -1,7 +1,6 @@
 LinearEquation class
 
 Instance Variables:
-
     private int x1 - This variable represents the x-coordinate of the first point.
     private int y1 - This variable represents the y-coordinate of the first point.
     private int x2 - This variable represents the x-coordinate of the second point.
