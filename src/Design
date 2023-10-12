@@ -8,7 +8,7 @@ Instance Variables:
 
 Constructor
     -public LinearEquation(String point1, String point2)
-    This constructor takes in the two coordinate points as two arguments.
+    This constructor takes in the two coordinate points inputted by the user as two String arguments.
     The constructor will utilize the substring, length, indexOf and parseInt methods to assign the correct values from the arguments to their
     respective instance variable that represents coordinate numbers x1, y1, x2, or y2.
 
